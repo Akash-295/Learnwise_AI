@@ -146,13 +146,16 @@ The project follows an end-to-end machine learning workflow:
 flowchart TD
     A[Student Information] --> B[Streamlit Interface]
     B --> C[Input Validation]
-    C --> D[Prediction Module]
-    D --> E[Saved ML Pipeline]
-    E --> F[Predicted Outcome]
-    E --> G[Class Probabilities]
-    F --> H[Results and Recommendations]
-    G --> H
-    H --> B
+    C --> D[Feature Configuration]
+    D --> E[Prediction Module]
+    E --> F[Load Saved ML Pipeline]
+    F --> G[Preprocessing Pipeline]
+    G --> H[Classification Model]
+    H --> I[Predicted Outcome]
+    H --> J[Class Probabilities]
+    I --> K[Results Dashboard]
+    J --> K
+    K --> L[Charts and Recommendations]
 ```
 
 ### Project Components
